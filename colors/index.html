@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+	</head>
+	<body>
+		<div id="app">
+			<header class="app-header">
+				<h1>Palette Manager</h1>
+				<nav class="menu-navigation">
+					<!--<ul>
+						<li class="menu-item" data-tool="palette-manager">
+							Palette Manager
+						</li>
+						<li class="menu-item" data-tool="gradient-generator">
+							Gradient Generator
+						</li>
+						<li class="menu-item" data-tool="contrast-checker">
+							Contrast Tool
+						</li>
+						<li class="menu-item" data-tool="color-converter">
+							Color Converter
+						</li>
+						<li class="menu-item" data-tool="palette-history">
+							Palette History
+						</li>
+					</ul>-->
+				</nav>
+			</header>
+
+			<main class="content-wrapper">
+				<aside class="color-palette">
+					<div class="color-swatch" id="color1-container">
+						<input type="color" name="color1" id="color1" />
+						<label for="color1">Couleur 1</label>
+						<div class="color-controls">
+							<button class="adjust-btn red">+R</button>
+							<button class="adjust-btn green">+G</button>
+							<button class="adjust-btn blue">+B</button>
+						</div>
+					</div>
+					<div class="color-swatch" id="color2-container">
+						<input type="color" name="color2" id="color2" />
+						<label for="color2">Couleur 2</label>
+						<div class="color-controls">
+							<button class="adjust-btn red">+R</button>
+							<button class="adjust-btn green">+G</button>
+							<button class="adjust-btn blue">+B</button>
+						</div>
+					</div>
+					<div class="color-swatch" id="color3-container">
+						<input type="color" name="color3" id="color3" />
+						<label for="color3">Couleur 3</label>
+						<div class="color-controls">
+							<button class="adjust-btn red">+R</button>
+							<button class="adjust-btn green">+G</button>
+							<button class="adjust-btn blue">+B</button>
+						</div>
+					</div>
+					<div class="color-swatch" id="color4-container">
+						<input type="color" name="color4" id="color4" />
+						<label for="color4">Couleur 4</label>
+						<div class="color-controls">
+							<button class="adjust-btn red">+R</button>
+							<button class="adjust-btn green">+G</button>
+							<button class="adjust-btn blue">+B</button>
+						</div>
+					</div>
+					<div class="color-swatch" id="color5-container">
+						<input type="color" name="color5" id="color5" />
+						<label for="color5">Couleur 5</label>
+						<div class="color-controls">
+							<button class="adjust-btn red">+R</button>
+							<button class="adjust-btn green">+G</button>
+							<button class="adjust-btn blue">+B</button>
+						</div>
+					</div>
+				</aside>
+
+				<section class="tool-output" id="tool-output">
+					<div class="live-preview">
+						<h2 class="preview-header">
+							Spring Collection Preview
+						</h2>
+						<p class="preview-text">
+							Explore how your color palette brings life and
+							vibrancy to this beautiful mini site.
+						</p>
+						<button class="preview-button">Discover More</button>
+
+						<!-- Modern Pricing Cards -->
+						<div class="pricing-cards-modern">
+							<div class="pricing-card-modern">
+								<h3 class="card-title">Starter Plan</h3>
+								<p class="card-price">$12.99/month</p>
+								<ul class="card-features">
+									<li>Basic Features</li>
+									<li>Color Customization</li>
+									<li>Email Support</li>
+								</ul>
+								<button class="card-button">Select Plan</button>
+							</div>
+							<div class="pricing-card-modern featured-card">
+								<h3 class="card-title">Spring Special</h3>
+								<p class="card-price">$24.99/month</p>
+								<ul class="card-features">
+									<li>Advanced Color Options</li>
+									<li>Priority Support</li>
+									<li>Access to Premium Patterns</li>
+								</ul>
+								<button class="card-button featured-button">
+									Best Choice
+								</button>
+							</div>
+							<div class="pricing-card-modern">
+								<h3 class="card-title">Premium Plan</h3>
+								<p class="card-price">$39.99/month</p>
+								<ul class="card-features">
+									<li>All Special Features</li>
+									<li>Dedicated Consultant</li>
+									<li>Early Access to New Tools</li>
+								</ul>
+								<button class="card-button">Select Plan</button>
+							</div>
+						</div>
+
+						<section class="image-gallery">
+							<h2 class="preview-header">
+								Responsive Image Gallery
+							</h2>
+							<div class="image-gallery-columns">
+								<img
+									src="https://picsum.photos/300/400"
+									alt="Image 1"
+								/>
+								<img
+									src="https://picsum.photos/350/300"
+									alt="Image 2"
+								/>
+								<img
+									src="https://picsum.photos/300/450"
+									alt="Image 3"
+								/>
+								<img
+									src="https://picsum.photos/320/400"
+									alt="Image 4"
+								/>
+								<img
+									src="https://picsum.photos/310/350"
+									alt="Image 5"
+								/>
+								<img
+									src="https://picsum.photos/300/300"
+									alt="Image 6"
+								/>
+								<img
+									src="https://picsum.photos/330/400"
+									alt="Image 7"
+								/>
+								<img
+									src="https://picsum.photos/310/500"
+									alt="Image 8"
+								/>
+							</div>
+						</section>
+
+						<section class="testimonials-section">
+							<h2 class="section-header">What Our Users Say</h2>
+							<div class="testimonials-container">
+								<div class="testimonial-card">
+									<p class="testimonial-text">
+										"This tool transformed the way I work
+										with colors. It's intuitive and saves me
+										so much time!"
+									</p>
+									<p class="testimonial-author">
+										- Alex Smith, Designer
+									</p>
+								</div>
+								<div class="testimonial-card">
+									<p class="testimonial-text">
+										"I love how the palette preview adapts
+										in real-time. It's perfect for seeing
+										results immediately."
+									</p>
+									<p class="testimonial-author">
+										- Jamie Lee, Developer
+									</p>
+								</div>
+								<div class="testimonial-card">
+									<p class="testimonial-text">
+										"A game-changer for my projects. The
+										contrast tools ensure accessibility and
+										aesthetics combined."
+									</p>
+									<p class="testimonial-author">
+										- Morgan Diaz, Product Manager
+									</p>
+								</div>
+							</div>
+						</section>
+
+						<section class="about-color-tool">
+							<h2 class="section-header">
+								Why Color Matters in Design
+							</h2>
+							<h3>Lorem, ipsum dolor.</h3>
+							<p>
+								Color plays a crucial role in design and user
+								experience. It is not just an aesthetic choice;
+								it influences the way users interact with your
+								content and perceive your brand. The right color
+								combinations can evoke emotions, draw attention
+								to key elements, and create a harmonious flow
+								throughout a project. This is why having a
+								reliable tool to choose and test color palettes
+								is essential for designers, developers, and
+								content creators alike.
+							</p>
+							<h3>Lorem, ipsum dolor.</h3>
+							<p>
+								Our color palette tool has been developed to
+								address these needs by providing an intuitive
+								interface that allows users to generate and
+								fine-tune color schemes effortlessly. Whether
+								you are a seasoned designer or just starting
+								out, understanding how to use color effectively
+								can elevate your projects and make them stand
+								out.
+							</p>
+							<h3>Lorem, ipsum dolor.</h3>
+							<p>
+								It is also important to consider the
+								psychological effects of color. For example,
+								blue is often associated with trust and
+								professionalism, making it a common choice for
+								corporate designs. In contrast, vibrant colors
+								like red or orange can evoke excitement and
+								urgency, which is why they are frequently used
+								for call-to-action buttons and promotions.
+							</p>
+							<h3>Lorem, ipsum dolor.</h3>
+							<p>
+								Our tool goes beyond basic color selection by
+								incorporating features that ensure accessibility
+								and inclusivity. The built-in contrast checker
+								helps you verify that your text is legible for
+								users with visual impairments, adhering to the
+								Web Content Accessibility Guidelines (WCAG).
+								This ensures that your website or app is usable
+								by a broader audience, improving user
+								satisfaction and compliance with accessibility
+								standards.
+							</p>
+							<p>
+								Furthermore, we provide educational resources
+								within the tool to help users understand
+								concepts such as complementary colors, color
+								harmony, and the importance of maintaining a
+								balance between different shades. These features
+								are especially helpful for those looking to
+								deepen their knowledge and apply it in
+								real-world scenarios.
+							</p>
+							<h3>Lorem, ipsum dolor.</h3>
+							<p>
+								Lastly, collaboration is made simple with our
+								sharing and exporting features. Once you’ve
+								crafted your perfect palette, you can easily
+								share it with your team or save it for later
+								use. This streamlines the design process,
+								allowing teams to work cohesively and maintain a
+								unified visual identity.
+							</p>
+							<p>
+								In summary, our color palette tool is designed
+								not only to facilitate the creation of beautiful
+								and effective color schemes but also to enhance
+								the overall design process. By making color
+								selection intuitive and accessible, we aim to
+								empower users to create more engaging, visually
+								appealing, and inclusive designs.
+							</p>
+						</section>
+
+						<section class="faq-section">
+							<h2 class="section-header">
+								Frequently Asked Questions
+							</h2>
+							<div class="faq-container">
+								<div class="faq-item" tabindex="0">
+									<button class="faq-question">
+										How do I ensure my palette is
+										accessible?
+									</button>
+									<div class="faq-answer">
+										<p>
+											Our tool includes a contrast checker
+											that automatically calculates the
+											accessibility of text over
+											background colors according to WCAG
+											standards.
+										</p>
+									</div>
+								</div>
+								<div class="faq-item" tabindex="0">
+									<button class="faq-question">
+										What is the best way to use the color
+										palette tool?
+									</button>
+									<div class="faq-answer">
+										<p>
+											Our color palette tool allows you to
+											preview and adjust color schemes
+											easily. Start by selecting a base
+											color and use the tools to adjust
+											and view complementary colors.
+										</p>
+									</div>
+								</div>
+								<div class="faq-item">
+									<button class="faq-question">
+										Can I save and export my palettes?
+									</button>
+									<div class="faq-answer">
+										<p>
+											Yes! You can save your palette and
+											export it in multiple formats, such
+											as JSON or image files, for easy
+											integration into your projects.
+										</p>
+									</div>
+								</div>
+								<!-- Nouvelles questions -->
+								<div class="faq-item" tabindex="0">
+									<button class="faq-question">
+										What formats are supported for palette
+										export?
+									</button>
+									<div class="faq-answer">
+										<p>
+											You can export your color palettes
+											in various formats including PNG,
+											JPEG, and JSON, making it easier to
+											integrate them into design and
+											development workflows.
+										</p>
+									</div>
+								</div>
+								<div class="faq-item" tabindex="0">
+									<button class="faq-question">
+										How do I use the contrast checker tool
+										effectively?
+									</button>
+									<div class="faq-answer">
+										<p>
+											To use the contrast checker, simply
+											select a foreground and background
+											color from your palette. The tool
+											will automatically calculate the
+											contrast ratio and indicate if it
+											meets WCAG standards for
+											accessibility.
+										</p>
+									</div>
+								</div>
+								<div class="faq-item" tabindex="0">
+									<button class="faq-question">
+										Is there a way to share my palettes with
+										team members?
+									</button>
+									<div class="faq-answer">
+										<p>
+											Absolutely! Once you've created a
+											palette, you can share it via a
+											unique link or export it as a JSON
+											file that your team members can
+											import into their own tools.
+										</p>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
+			</main>
+
+			<footer class="app-footer">
+				<p>&copy; 2024 Palette Manager. All rights reserved.</p>
+			</footer>
+		</div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
