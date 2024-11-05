@@ -1,25 +1,9 @@
 import './style.css';
 
-const input = document.querySelector("#tirage")
-const form = document.querySelector("form")
-const results = document.querySelector("#results")
+import './randomMovie.js';
 
-console.log(form)
+const LivePreview = document.querySelector('.live-preview');
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault() ;
+const inputColor1 = document.querySelector('#color1');
 
-    const listFilms = input.value ;
-
-    const arrayFilms = listFilms.split(';') ;
-
-    const longueur = arrayFilms.length ;
-
-    const randomNumber = Math.floor(Math.random()*longueur) ;
-
-    console.log(randomNumber) ;
-
-    results.innerText = arrayFilms[randomNumber] ;
-}
-
-)
+const inputColor = document.querySelector('input[type=color1');
